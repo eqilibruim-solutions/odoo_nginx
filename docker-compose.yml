@@ -34,7 +34,6 @@ services:
     restart: always             # run as a service
 
   nginx_odoo:
-    container_name: nginx
     image: nginx:latest
     restart: unless-stopped
     ports:
