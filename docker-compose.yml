@@ -45,7 +45,7 @@ services:
       - ./certbot/data:/var/www/html
   certbot:
     image: certbot/certbot:arm64v8-latest
-    command: certonly --webroot --webroot-path=/var/www/html -- email simon@sion-trillos.com --agree-tos --no-eff-email -d sion-trillos.com -d www.sion-trillos.com
+    command: certonly --webroot --webroot-path=/var/www/html --email simon@sion-trillos.com --agree-tos --no-eff-email -d odoop.sion-trillos.com
     volumes:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/logs:/var/log/letsencrypt
