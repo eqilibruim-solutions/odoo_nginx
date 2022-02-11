@@ -1,0 +1,44 @@
+version: '3'
+services:
+  nginx-proxy:
+    image: budry/jwilder-nginx-proxy-arm
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:ro
+      - confd:/etc/nginx/conf.d
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+    labels:
+      - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
+
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion:stable
+    restart: always
+    volumes:
+      - certs:/etc/nginx/certs:rw
+      - confd:/etc/nginx/conf.d
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  nginx_podoop:
+    image: nginx
+    restart: always
+    expose:
+      - "80"
+    volumes:
+      - /home/ubuntu/www:/usr/share/nginx/html:ro
+    environment:
+      - VIRTUAL_HOST=podoop.sion-trillos.com
+      - LETSENCRYPT_HOST=podoop.sion-trillos.com
+      - LETSENCRYPT_EMAIL=simon@sion-trillos.com
+
+volumes:
+  certs:
+  html:
+  vhostd:
+  confd:
