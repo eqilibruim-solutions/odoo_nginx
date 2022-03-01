@@ -1,0 +1,53 @@
+{
+    "compania": "mscwms",
+    "num_ped": "Z-188556",
+    "nit_cliente": "901105704",
+    "cod_vendedor": "2038",
+    "cond_pago": "                    ",
+    "observacion": "",
+    "fecha_pedido": "20220215",
+    "item": [
+        {
+            "cod_producto": "620030000460",
+            "cant_pedida": 3,
+            "precio_unitario": 74445.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620022005502",
+            "cant_pedida": 12,
+            "precio_unitario": 182016.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620030000480",
+            "cant_pedida": 2,
+            "precio_unitario": 49630.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620022005504",
+            "cant_pedida": 6,
+            "precio_unitario": 172944.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620012000420",
+            "cant_pedida": 75,
+            "precio_unitario": 217125.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620022005501",
+            "cant_pedida": 12,
+            "precio_unitario": 182016.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620022005506",
+            "cant_pedida": 3,
+            "precio_unitario": 148173.0,
+            "descuento": 0.0
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "compania": "mscwms",
+    "num_ped": "Z-188305",
+    "nit_cliente": "30000",
+    "cod_vendedor": "2900",
+    "cond_pago": "                    ",
+    "observacion": "",
+    "fecha_pedido": "20220215",
+    "item": [
+        {
+            "cod_producto": "70002000003",
+            "cant_pedida": 6,
+            "precio_unitario": 185550.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "70013000002",
+            "cant_pedida": 4,
+            "precio_unitario": 59832.0,
+            "descuento": 0.0
+        }
+    ]
+}

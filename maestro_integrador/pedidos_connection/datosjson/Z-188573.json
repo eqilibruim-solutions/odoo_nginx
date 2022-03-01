@@ -1,0 +1,35 @@
+{
+    "compania": "mscwms",
+    "num_ped": "Z-188573",
+    "nit_cliente": "43665481",
+    "cod_vendedor": "3200",
+    "cond_pago": "                    ",
+    "observacion": "",
+    "fecha_pedido": "20220215",
+    "item": [
+        {
+            "cod_producto": "70001000002",
+            "cant_pedida": 5,
+            "precio_unitario": 136555.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620030000480",
+            "cant_pedida": 2,
+            "precio_unitario": 49630.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000620",
+            "cant_pedida": 1,
+            "precio_unitario": 128655.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "620030000460",
+            "cant_pedida": 2,
+            "precio_unitario": 49630.0,
+            "descuento": 0.0
+        }
+    ]
+}

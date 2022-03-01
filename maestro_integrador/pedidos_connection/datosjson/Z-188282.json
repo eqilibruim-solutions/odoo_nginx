@@ -1,0 +1,17 @@
+{
+    "compania": "mscwms",
+    "num_ped": "Z-188282",
+    "nit_cliente": "70976472",
+    "cod_vendedor": "1500",
+    "cond_pago": "                    ",
+    "observacion": "",
+    "fecha_pedido": "20220215",
+    "item": [
+        {
+            "cod_producto": "500001000006",
+            "cant_pedida": 1,
+            "precio_unitario": 270504.0,
+            "descuento": 0.0
+        }
+    ]
+}

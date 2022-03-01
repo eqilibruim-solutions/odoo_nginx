@@ -1,0 +1,89 @@
+{
+    "compania": "mscwms",
+    "num_ped": "Z-188819",
+    "nit_cliente": "901244349",
+    "cod_vendedor": "3300",
+    "cond_pago": "                    ",
+    "observacion": "",
+    "fecha_pedido": "20220216",
+    "item": [
+        {
+            "cod_producto": "330020000900",
+            "cant_pedida": 4,
+            "precio_unitario": 305212.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330019000142",
+            "cant_pedida": 8,
+            "precio_unitario": 125712.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000904",
+            "cant_pedida": 1,
+            "precio_unitario": 350336.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000547",
+            "cant_pedida": 2,
+            "precio_unitario": 179664.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000526",
+            "cant_pedida": 1,
+            "precio_unitario": 94034.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000076",
+            "cant_pedida": 4,
+            "precio_unitario": 311764.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000070",
+            "cant_pedida": 2,
+            "precio_unitario": 179830.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000063",
+            "cant_pedida": 2,
+            "precio_unitario": 59074.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000062",
+            "cant_pedida": 1,
+            "precio_unitario": 231008.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000039",
+            "cant_pedida": 2,
+            "precio_unitario": 130168.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000018",
+            "cant_pedida": 2,
+            "precio_unitario": 179830.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000010",
+            "cant_pedida": 2,
+            "precio_unitario": 262184.0,
+            "descuento": 0.0
+        },
+        {
+            "cod_producto": "330020000986",
+            "cant_pedida": 2,
+            "precio_unitario": 107816.0,
+            "descuento": 0.0
+        }
+    ]
+}
