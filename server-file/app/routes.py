@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
-    with open(getcwd() + "/" + file.filename, "wb") as myfile:
+    with open(getcwd() + "/data/" + file.filename, "wb") as myfile:
         content = await file.read()
         myfile.write(content)
         myfile.close()
@@ -17,18 +17,19 @@ async def upload_file(file: UploadFile = File(...)):
 
 @router.get("/file/{name_file}")
 def get_file(name_file: str):
-    return FileResponse(getcwd() + "/" + name_file)
+    print(getcwd())
+    return FileResponse(getcwd() + "/data/" + name_file)
 
 
 @router.get("/download/{name_file}")
 def download_file(name_file: str):
-    return FileResponse(getcwd() + "/" + name_file, media_type="application/octet-stream", filename=name_file)
+    return FileResponse(getcwd() + "/data/" + name_file, media_type="application/octet-stream", filename=name_file)
 
 
 @router.delete("/delete/{name_file}")
 def delete_file(name_file: str):
     try:
-        remove(getcwd() + "/" + name_file)
+        remove(getcwd() + "/data/" + name_file)
         return JSONResponse(content={
             "removed": True
         }, status_code=200)
@@ -38,10 +39,3 @@ def delete_file(name_file: str):
             "message": "File not found"
         }, status_code=404)
 
-
-@router.delete("/folder")
-def delete_file(folder_name: str = Form(...)):
-    rmtree(getcwd() + folder_name)
-    return JSONResponse(content={
-        "removed": True
-    }, status_code=200)
