@@ -3,11 +3,10 @@
     'name': "stock_mod",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modelo de agregracion para principal stock""",
 
     'description': """
-        Long description of module's purpose
+        Bexsoluciones modulo complementario de stock
     """,
 
     'author': "SimonT",
@@ -20,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','helpdesk_mgmt'],
+    'depends': ['base','stock', 'sale_stock'],
 
     # always loaded
     'data': [
