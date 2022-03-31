@@ -385,4 +385,11 @@ if [ $INSTALL_NGINX = "True" ]; then
   echo "Nginx configuration file: /etc/nginx/sites-available/$WEBSITE_NAME"
 fi
 echo "-----------------------------------------------------------"
-sudo su cp -rf img_bex/* /odoo/odoo-server/addons/web/static/img/.
+
+## Imagenes bex
+#git clone https://github.com/soytrillos/odoo_nginx.git
+#cd odoo_nginx
+#sudo su cp -rf img_bex/* /odoo/odoo-server/addons/web/static/img/.
+
+## Quitar de dropdown referencias a Odoo
+#sudo vim /odoo/odoo-server/addons/web/static/src/webclient/user_menu/user_menu_items.js
