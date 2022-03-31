@@ -15,6 +15,7 @@ def main(bucket, archivo):
         URL_MINIO,
         access_key=ACCESS_KEY,
         secret_key=SECRET_KEY,
+        secure=False
     )
 
     # Valida si el bucket existe sino lo crea
